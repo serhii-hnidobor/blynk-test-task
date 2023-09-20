@@ -1,0 +1,20 @@
+.items {
+  min-width: 340px;
+  max-width: 1000px;
+  width: 100%;
+  padding: 10px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+}
+
+.items__heading {
+  color: gray;
+}
+
+.items__new-item-form {
+  display: flex;
+  margin: 10px 0;
+}
+
+.new-item-form__input {
+  margin: 0 10px;
+}

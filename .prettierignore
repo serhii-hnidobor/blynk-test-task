@@ -1,0 +1,9 @@
+.github
+node_modules
+dist
+public
+.prettierignore
+yarn.lock
+pnpm-lock.yaml
+package-lock.json
+README.md

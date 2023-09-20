@@ -1,0 +1,23 @@
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item--active {
+  border-left: 4px solid deeppink;
+}
+
+.item__badge {
+  position: absolute;
+  right: 110px;
+}
+
+.item__text-content {
+  width: 180px;
+  word-wrap: break-word;
+  overflow: hidden;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
