@@ -1,27 +1,60 @@
-# React + TypeScript + Vite
+# Dummy App with Item Management and Comments
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a simple React application built using Vite and PNPM, where users can add, delete items, and write comments with text and color.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Add new items with a name.
+- Delete items.
+- Add comments to each item with customizable text and color.
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Follow these steps to get the app up and running on your local machine:
 
-- Configure the top-level `parserOptions` property like this:
+### Prerequisites
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+- Node.js: Ensure you have Node.js installed.
+- PNPM: Install PNPM globally using \`npm install -g pnpm\`.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+### Installation
+
+1. Clone the repository:
+
+   \`\`\`bash
+   git clone https://github.com/serhii-hnidobor/blynk-test-task
+   \`\`\`
+
+2. Navigate to the project directory:
+
+   \`\`\`bash
+   cd blynk-test-task
+   \`\`\`
+
+3. Install dependencies using PNPM:
+
+   \`\`\`bash
+   pnpm install
+   \`\`\`
+
+### Development
+
+To start the development server, run:
+
+\`\`\`bash
+pnpm dev
+\`\`\`
+
+The app will be available at \`http://localhost:5173\`.
+
+### Usage
+
+1. Add an item:
+   - Enter the item name in the input field and click the "Add Item" button.
+2. Delete an item:
+   - Click the "Delete" button next to the item you want to remove.
+3. Add a comment to an item:
+   - Click the "Add Comment" button next to the item.
+   - Enter your comment text.
+   - Select a color for the comment.
+   - Click the "Add Comment" button to save.

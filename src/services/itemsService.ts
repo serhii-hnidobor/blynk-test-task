@@ -48,6 +48,12 @@ class ItemsService {
     return items;
   }
 
+  getItemById(id: string) {
+    const allItems = this.storage.retrieve<Item[]>(StorageKey.Items);
+
+    return allItems?.find(({ id: itemId }) => itemId === id);
+  }
+
   private deleteItemComments(id: string) {
     const allComments = this.storage.retrieve<Comment[]>(StorageKey.Comments);
 
@@ -69,7 +75,7 @@ class ItemsService {
     const activeItemId = this.storage.retrieve<string>(StorageKey.ActiveItemId);
 
     const isDeleteActiveItem = !!items.find(
-      ({ id: currentItemId }) => currentItemId === activeItemId,
+      ({ id: currentItemId }) => currentItemId === activeItemId
     );
 
     if (!filteredItems.length) {

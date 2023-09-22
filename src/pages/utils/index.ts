@@ -59,6 +59,12 @@ function getHandleAddComment({
   itemId,
 }: GetHandleAddCommentArg) {
   return (newComment: AddCommentPayload) => {
+    const isItemExist = !!itemsService.getItemById(itemId);
+
+    if (!isItemExist) {
+      return;
+    }
+
     const { newComment: createdComment, updatedAllItems } =
       commentService.addComment(newComment, itemId);
 
