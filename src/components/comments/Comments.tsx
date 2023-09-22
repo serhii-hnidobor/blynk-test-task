@@ -52,7 +52,9 @@ function Comments({ comments, itemId, handleAddComment }: Props) {
           name="text"
           value={newComment.text}
           onChange={newCommentChange}
-        ></textarea>
+          required
+          placeholder="Type your comment here..."
+        />
         <button className="btn btn-primary comments-add-form__submit-button">
           add new
         </button>
